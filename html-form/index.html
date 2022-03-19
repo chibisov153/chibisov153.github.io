@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>HTML-Form</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+<!--	<meta property="og:image" content="images/preview.jpg">-->
+
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<h1>HTML<span class="span"> - </span> form</h1>
+
+	<div class="wrap">
+		<form action="#" class="form" novalidate>
+			<fieldset>
+
+				<legend>
+					<b class="form-legend">Registration</b>
+				</legend>
+
+				<div class="from-group">
+					<input id="inputName" type="text" name="username" class="form-input" required>
+					<span class="from-strip"></span>
+					<label for="inputName" class="form-label">Your name</label>
+					<p class="from-errors"></p>
+				</div>
+
+				<div class="from-group">
+					<input id="inputEmail" type="text" name="email" class="form-input" required>
+					<span class="from-strip"></span>
+					<label for="inputEmail" class="form-label">Your Email</label>
+					<p class="from-errors"></p>
+				</div>
+
+				<div class="from-group">
+					<input id="inputPassword" type="password" name="password" class="form-input formPass"
+								 required>
+					<span class="from-view"></span>
+					<span class="from-strip"></span>
+					<label for="inputPassword" class="form-label">Password</label>
+					<p class="from-errors"></p>
+				</div>
+
+				<div class="from-group">
+					<input id="inputPassConfirmation" type="password" name="passwordConfirmation"
+								 class="form-input formPass" required>
+					<span class="from-view"></span>
+					<span class="from-strip"></span>
+					<label for="inputPassConfirmation" class="form-label">Confirm Password</label>
+					<p class="from-errors">Confirm the password</p>
+				</div>
+
+				<div class="from-group">
+					<input id="inputPhone" type="tel" name="phone" class="form-input form-phone" required>
+					<span class="from-strip"></span>
+					<label for="inputPhone" class="form-label">Phone</label>
+					<p class="from-errors"></p>
+				</div>
+
+				<div class="from-group-age">
+					<select id="formAge" name="age" class="form-input form-input-age" required>
+						<option value="">Your age</option>
+						<option value="от 18 до 25">Молодой</option>
+						<option value="от 25 до 45">Старый</option>
+						<option value="от 45">Супер старый</option>
+					</select>
+					<span class="from-strip from-strip-age"></span>
+					<label for="formAge" class="from-help">Choose an option</label>
+				</div>
+
+				<div class="from-group-upload">
+					<div class="form-preview"></div>
+					<input id="formFile" accept=".jpg, .png, .gif" type="file" name="file"
+								 tabindex="-1" class="form-file">
+					<button class="form-file-button form-button">Select a file</button>
+					<p class="from-help">Image no more than 1MB</p>
+				</div>
+
+				<div class="from-group-check">
+					<input id="exampleCheck" type="checkbox" name="checkbox" class="form-check"
+								 required>
+					<span class="from-check-dot"></span>
+					<label for="exampleCheck" class="form-check-label">Agreement with the terms</label>
+					<p class="from-errors-check"></p>
+				</div>
+
+				<button type="submit" class="form-button">- Send -</button>
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="modal-win">
+		<p class="modal-message"></p>
+	</div>
+
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
