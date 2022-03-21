@@ -149,6 +149,7 @@ input, select {
 .form-legend {
   font-size: 20px;
   margin: 0 5px;
+  letter-spacing: 1.6px;  
   color: var(--color-white);
 }
 
@@ -188,6 +189,26 @@ input, select {
   -webkit-transition-delay: 0.16s;
        -o-transition-delay: 0.16s;
           transition-delay: 0.16s;
+}
+
+.form-input:focus::-webkit-input-placeholder {
+  color: var(--color-black);
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--color-black);
+}
+
+.form-input:focus:-ms-input-placeholder {
+  color: var(--color-black);
+}
+
+.form-input:focus::-ms-input-placeholder {
+  color: var(--color-black);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-black);
 }
 
 .form-input-age:required:valid ~ .from-strip {
