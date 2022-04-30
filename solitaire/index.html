@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Pyramid solitaire</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#647c60">
+	<meta name="apple-mobile-web-app-status-bar" content="#647c60">
+	<link rel="icon" type="image/png" href="images/icons/solitaire-64.png">
+	<link rel="apple-touch-icon" type="image/png" href="images/icons/solitaire-icon-192.png">
+<!--	<meta property="og:image" content="images/favicon/preview.jpg">-->
+	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body class="body">
+
+	<canvas class="canvas"></canvas>
+
+	<div class="container-wrap">
+		<div class="container">
+			<button class="button-again">
+				<span class="spacer"></span>
+			</button>
+
+			<div class="item" data-name="six">
+				<div class="item-front">
+					<img src="images/six/cross-six.svg" alt="Six cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="six">
+				<div class="item-front">
+					<img src="images/six/diamonds-six.svg" alt="Six diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="six">
+				<div class="item-front">
+					<img src="images/six/hearts-six.svg" alt="Six hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="six">
+				<div class="item-front">
+					<img src="images/six/spades-six.svg" alt="Six spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="seven">
+				<div class="item-front">
+					<img src="images/seven/cross-seven.svg" alt="Seven cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="seven">
+				<div class="item-front">
+					<img src="images/seven/diamonds-seven.svg" alt="Seven diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="seven">
+				<div class="item-front">
+					<img src="images/seven/hearts-seven.svg" alt="Seven hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="seven">
+				<div class="item-front">
+					<img src="images/seven/spades-seven.svg" alt="Seven spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="eight">
+				<div class="item-front">
+					<img src="images/eight/cross-eight.svg" alt="Eight cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="eight">
+				<div class="item-front">
+					<img src="images/eight/diamonds-eight.svg" alt="Eight diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="eight">
+				<div class="item-front">
+					<img src="images/eight/hearts-eight.svg" alt="Eight hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="eight">
+				<div class="item-front">
+					<img src="images/eight/spades-eight.svg" alt="Eight spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="nine">
+				<div class="item-front">
+					<img src="images/nine/cross-nine.svg" alt="Nine cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="nine">
+				<div class="item-front">
+					<img src="images/nine/diamonds-nine.svg" alt="Nine diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="nine">
+				<div class="item-front">
+					<img src="images/nine/hearts-nine.svg" alt="Nine hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="nine">
+				<div class="item-front">
+					<img src="images/nine/spades-nine.svg" alt="Nine spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ten">
+				<div class="item-front">
+					<img src="images/ten/cross-ten.svg" alt="Ten cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ten">
+				<div class="item-front">
+					<img src="images/ten/diamonds-ten.svg" alt="Ten diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ten">
+				<div class="item-front">
+					<img src="images/ten/hearts-ten.svg" alt="Ten hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ten">
+				<div class="item-front">
+					<img src="images/ten/spades-ten.svg" alt="Ten spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="jack">
+				<div class="item-front">
+					<img src="images/jack/jack-cross.svg" alt="Jack cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="jack">
+				<div class="item-front">
+					<img src="images/jack/jack-diamonds.svg" alt="Jack diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="jack">
+				<div class="item-front">
+					<img src="images/jack/jack-hearts.svg" alt="Jack hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="jack">
+				<div class="item-front">
+					<img src="images/jack/jack-spades.svg" alt="Jack spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="lady">
+				<div class="item-front">
+					<img src="images/lady/lady-cross.svg" alt="Lady cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="lady">
+				<div class="item-front">
+					<img src="images/lady/lady-diamonds.svg" alt="Lady diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="lady">
+				<div class="item-front">
+					<img src="images/lady/lady-hearts.svg" alt="Lady hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="lady">
+				<div class="item-front">
+					<img src="images/lady/lady-spades.svg" alt="Lady spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="king">
+				<div class="item-front">
+					<img src="images/king/king-diamonds.svg" alt="King diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="king">
+				<div class="item-front">
+					<img src="images/king/king-hearts.svg" alt="King hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="king">
+				<div class="item-front">
+					<img src="images/king/king-spades.svg" alt="King spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="king">
+				<div class="item-front">
+					<img src="images/king/king-cross.svg" alt="King cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ace">
+				<div class="item-front">
+					<img src="images/ace/diamonds-ace.svg" alt="Ace diamonds">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ace">
+				<div class="item-front">
+					<img src="images/ace/hearts-ace.svg" alt="Ace hearts">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ace">
+				<div class="item-front">
+					<img src="images/ace/spades-ace.svg" alt="Ace spades">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+			<div class="item" data-name="ace">
+				<div class="item-front">
+					<img src="images/ace/cross-ace.svg" alt="Ace cross">
+				</div>
+				<div class="item-bgi"></div>
+			</div>
+
+		</div>
+
+		<div class="rules-game">
+			<h2 class="rules-game-h2">Правила</h2>
+			<p class="rules-game-text">
+				Уберите все карты с поля.<br>
+				Карты удаляются попарно, если их значение совпадают ( король на короля, шесть на шесть ).<br>
+				Для удаления пары карт перетащите одну на другую.<br>
+				Колоду можно просматривать много раз.
+			</p>
+		</div>
+
+	</div>
+
+	<button class="play-button" title="Новая игра">
+		<img src="images/play-icon.svg" alt="">
+	</button>
+
+	<button class="document-button" title="Правила">
+		<img src="images/document-icon.svg" alt="">
+	</button>
+
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
