@@ -1,91 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Slider fashion</title>
-  <meta name="description" content="meta description of the page Thomas Young | Slider fashion">
-  <meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/png" href="/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180.png">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slider fashion</title>
+    <meta
+      name="description"
+      content="meta description of the page Thomas Young | Slider fashion"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon-180x180.png"
+    />
 
-  <link rel="stylesheet" href="/css/styles.min.css">
-</head>
-<body class="body">
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body class="body">
+    <button class="menu-button" tabindex="1">
+      <span class="strip"></span>
+    </button>
 
-  <button class="menu-button" tabindex="1"><span class="strip"></span></button>
+    <nav class="menu">
+      <div class="menu-wrap">
+        <a href="/" class="menu-item" tabindex="-1" rel="eventHome">Home</a>
+      </div>
+      <div class="menu-wrap">
+        <a href="/blog" class="menu-item" tabindex="-1">Blog</a>
+      </div>
+      <div class="menu-wrap">
+        <a href="/nature" class="menu-item" tabindex="-1">Nature</a>
+      </div>
+      <div class="menu-wrap">
+        <a href="/travel" class="menu-item" tabindex="-1">Travel</a>
+      </div>
+      <div class="menu-wrap">
+        <a href="/fashion" class="menu-item" tabindex="-1">Fashion</a>
+      </div>
+      <div class="menu-wrap">
+        <a href="/portraits" class="menu-item" tabindex="-1">Portrait</a>
+      </div>
+    </nav>
 
-  <nav class="menu">
-    <div class="menu-wrap">
-      <a href="/" class="menu-item" tabindex="-1" rel="eventHome">Home</a>
-    </div>
-    <div class="menu-wrap">
-      <a href="/blog" class="menu-item" tabindex="-1">Blog</a>
-    </div>
-    <div class="menu-wrap">
-      <a href="/nature" class="menu-item" tabindex="-1">Nature</a>
-    </div>
-    <div class="menu-wrap">
-      <a href="/travel" class="menu-item" tabindex="-1">Travel</a>
-    </div>
-    <div class="menu-wrap">
-      <a href="/fashion" class="menu-item" tabindex="-1">Fashion</a>
-    </div>
-    <div class="menu-wrap">
-      <a href="/portraits" class="menu-item" tabindex="-1">Portrait</a>
-    </div>
-  </nav>
+    <button class="button-slider left" tabindex="3">
+      <svg>
+        <use xlink:href="images/sprite.svg#arrow"></use>
+      </svg>
+    </button>
 
-  <button class="button-slider left" tabindex="3">
-  <svg>
-    <use xlink:href="/images/sprite.svg#arrow"></use>
-  </svg>
-</button>
+    <button class="button-slider right" tabindex="4">
+      <svg>
+        <use xlink:href="images/sprite.svg#arrow"></use>
+      </svg>
+    </button>
 
-<button class="button-slider right" tabindex="4">
-  <svg>
-    <use xlink:href="/images/sprite.svg#arrow"></use>
-  </svg>
-</button>
-
-<main class="slider"><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-1.jpg">
-    <img src="/images/categories/fashion/fashion_img-1(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-2.jpg">
-    <img src="/images/categories/fashion/fashion_img-2(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-3.jpg">
-    <img src="/images/categories/fashion/fashion_img-3(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-4.jpg">
-    <img src="/images/categories/fashion/fashion_img-4(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-5.jpg">
-    <img src="/images/categories/fashion/fashion_img-5(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-6.jpg">
-    <img src="/images/categories/fashion/fashion_img-6(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-7.jpg">
-    <img src="/images/categories/fashion/fashion_img-7(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-8.jpg">
-    <img src="/images/categories/fashion/fashion_img-8(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-9.jpg">
-    <img src="/images/categories/fashion/fashion_img-9(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-10.jpg">
-    <img src="/images/categories/fashion/fashion_img-10(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-11.jpg">
-    <img src="/images/categories/fashion/fashion_img-11(1000).jpg" alt="Fashion image">
-  </picture><picture class="slider-img">
-    <source media="screen and (min-width: 992px)" srcset="/images/categories/fashion/fashion_img-12.jpg">
-    <img src="/images/categories/fashion/fashion_img-12(1000).jpg" alt="Fashion image">
-  </picture></main>
-  <script src="/js/menu.min.js"></script>
-  <script src="/js/slider.min.js"></script>
-
-</body>
+    <main class="slider">
+      <picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-1.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-1(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-2.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-2(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-3.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-3(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-4.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-4(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-5.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-5(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-6.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-6(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-7.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-7(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-8.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-8(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-9.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-9(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-10.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-10(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-11.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-11(1000).jpg"
+          alt="Fashion image"
+        /> </picture
+      ><picture class="slider-img">
+        <source
+          media="screen and (min-width: 992px)"
+          srcset="images/categories/fashion/fashion_img-12.jpg"
+        />
+        <img
+          src="images/categories/fashion/fashion_img-12(1000).jpg"
+          alt="Fashion image"
+        />
+      </picture>
+    </main>
+    <script src="js/menu.min.js"></script>
+    <script src="js/slider.min.js"></script>
+  </body>
 </html>
