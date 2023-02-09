@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hexagon - logo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon-180x180.png"
+    />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="css/popup.min.css" />
+  </head>
 
-<head>
+  <body>
+    <div class="popup">
+      <button class="popup-button">&#215;</button>
+      <h3 class="popup-h3">Анимированный логотип</h3>
+      <p class="popup-text">Библиотеки: GSAP, Paper.js</p>
+    </div>
 
-	<meta charset="utf-8">
-	<title>Hexagon - logo</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="images/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
-	<link rel="stylesheet" href="css/app.min.css">
+    <canvas id="myCanvas" resize></canvas>
 
-</head>
+    <button class="button"></button>
 
-<body>
-
-	<canvas id="myCanvas" resize></canvas>
-
-	<button class="button"></button>
-
-	<script src="js/main.min.js"></script>
-
-</body>
+    <script src="js/main.min.js"></script>
+    <script src="js/popup.min.js"></script>
+  </body>
 </html>
