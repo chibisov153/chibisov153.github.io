@@ -2,192 +2,283 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-
-    <title>HTML Верстальщик</title>
+    <title>Frontend-разработчик</title>
     <meta
       name="description"
-      content="HTML Верстальщик. Адаптивная, кроссбраузерная вёрстка сайтов плюс анимация. Чистый и семантически правильный код. HTML, CSS, JS, SVG"
+      content="Frontend-разработчик: HTML, CSS, JS, SVG, Canvas, Vue3, Nuxt3. Анимация: GSAP"
     />
-
     <meta name="freelancehunt" content="c6ca2e6c5b5b4d8" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta property="og:image" content="img/favicon/preview.jpg" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="img/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="img/favicon/apple-touch-icon-180x180.png"
     />
-
-    <meta name="theme-color" content="#000" />
-
-    <link rel="stylesheet" href="css/main.min.css" />
+    <meta property="og:image" content="img/favicon/preview.jpg" />
+    <link rel="stylesheet" href="css/app.min.css" />
   </head>
 
   <body>
-    <canvas class="canvas"></canvas>
+    <div class="smooth-wrapper body-wrap">
+      <div class="smooth-content">
+        <header class="header">
+          <div class="imagers-wrap">
+            <div class="imagers">
+              <picture>
+                <source
+                  media="screen and (min-width: 992px)"
+                  srcset="img/header.jpg"
+                />
+                <img
+                  src="img/header(1000).jpg"
+                  class="actors-img"
+                  alt="Frontend разработчик"
+                />
+              </picture>
+            </div>
+          </div>
 
-    <header class="header">
-      <div class="header-icons">
-        <a href="https://vk.com/id553874645" class="social-icon" title="VK">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-            <path
-              d="M491 747h52s16-1 24-10c7-8 7-23 7-23s-1-70 32-80c32-11 73 67 117 97 33 23 58 18 58 18l117-2s61-3 32-51c-3-4-17-36-87-101-73-68-64-57 25-174 53-72 75-116 68-135-6-17-46-13-46-13l-131 1s-10-1-17 3-12 14-12 14-21 56-48 103c-59 99-82 105-92 98-22-14-17-57-17-88 0-97 15-137-28-147-15-4-25-6-62-6-47-1-86 0-109 11-15 7-26 24-19 24 8 2 28 6 38 20 14 18 13 59 13 59s8 114-18 128c-17 10-42-10-94-100-27-46-47-98-47-98s-4-9-11-14c-8-6-20-8-20-8H91s-19 1-26 9c-6 7 0 22 0 22s98 229 209 345c101 105 217 98 217 98"
-            />
-          </svg>
-        </a>
+          <div class="header-wrap">
+            <h1 class="h1">
+              <span class="h1-wrap">
+                <span class="one-word">F</span
+                ><!--
+            --><span class="one-word">r</span
+                ><!--
+            --><span class="one-word">o</span
+                ><!--
+            --><span class="one-word">n</span
+                ><!--
+            --><span class="one-word">t</span
+                ><!--
+            --><span class="one-word">e</span
+                ><!--
+            --><span class="one-word">n</span
+                ><!--
+            --><span class="one-word">d</span>
+              </span>
+              <br />
+              <span class="h1-wrap">
+                <span class="two-word">р</span
+                ><!--
+            --><span class="two-word">а</span
+                ><!--
+            --><span class="two-word">з</span
+                ><!--
+            --><span class="two-word">р</span
+                ><!--
+            --><span class="two-word">а</span
+                ><!--
+            --><span class="two-word">б</span
+                ><!--
+            --><span class="two-word">о</span
+                ><!--
+            --><span class="two-word">т</span
+                ><!--
+            --><span class="two-word">ч</span
+                ><!--
+            --><span class="two-word">и</span
+                ><!--
+            --><span class="two-word">к</span>
+              </span>
+            </h1>
+            <h3 class="h3">
+              <span class="h1-wrap">
+                <span class="three-word">П</span
+                ><!--
+            --><span class="three-word">о</span
+                ><!--
+            --><span class="three-word">р</span
+                ><!--
+            --><span class="three-word">т</span
+                ><!--
+            --><span class="three-word">ф</span
+                ><!--
+            --><span class="three-word">о</span
+                ><!--
+            --><span class="three-word">л</span
+                ><!--
+            --><span class="three-word">и</span
+                ><!--
+            --><span class="three-word">о</span>
+              </span>
+            </h3>
+          </div>
+        </header>
 
-        <a
-          href="tg://resolve?domain=Dmitry Chibisov"
-          class="social-icon"
-          title="Telegram"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 456">
-            <path
-              d="M359 101L54 219c-10 4-9 18 1 21l77 23 29 92c3 10 15 12 23 5l40-41 78 58c10 7 23 2 26-10l52-249c2-12-10-22-21-17zm-38 55L179 281l-2 5-6 48c0 2-2 2-3 1l-22-73c-1-3 0-7 3-8l167-104c4-2 8 3 5 6z"
-            />
-          </svg>
-        </a>
+        <section class="section">
+          <div class="container">
+            <div class="item-wrap">
+              <a class="item" href="https://cozy-boba-970dd0.netlify.app/">
+                <img src="img/movie-actors.jpg" alt="Movie Actors" />
+              </a>
+            </div>
 
-        <a
-          href="whatsapp://send?phone=+79001069755"
-          class="social-icon whatsapp"
-          title="Whatsapp"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-            <path
-              d="M1000 487a489 489 0 0 1-728 427L0 1000l89-261A489 489 0 0 1 510 0c270 0 490 218 490 487zM509 78A412 412 0 0 0 96 487c0 90 30 173 79 240l-52 152 159-50a413 413 0 0 0 640-342c0-226-185-409-413-409zm248 521c-3-5-11-8-23-14l-82-38c-11-4-19-6-27 6s-31 38-38 46-14 9-27 3c-12-6-50-18-96-59-36-32-60-71-67-83s-1-18 5-24l18-21c6-7 8-12 12-20s2-15-1-21l-37-88c-10-24-20-20-27-20l-23-1c-8 0-21 3-32 15s-42 41-42 99c0 59 43 116 49 124s83 132 205 180 123 32 145 30 71-29 81-57 10-52 7-57z"
-            />
-          </svg>
-        </a>
+            <div class="item-wrap">
+              <a class="item" href="loader">
+                <img src="img/loader.jpg" alt="Loader" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="thomas-young">
+                <img src="img/thomas-young.jpg" alt="Thomas Young" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="solitaire">
+                <img src="img/solitaire.jpg" alt="Pyramid solitaire" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="tours">
+                <img src="img/tours.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="hexagon-logo">
+                <img src="img/hexagon-logo.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="logo-gotikcet">
+                <img src="img/gotikcet.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="sliders">
+                <img src="img/slider.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="organic-circle">
+                <img src="img/Organic-circle.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="organic">
+                <img src="img/Organic.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="ocean">
+                <img src="img/ocean.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="slanting-backgrounds">
+                <img src="img/slanting-backgrounds.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="html-form">
+                <img src="img/html-form.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="dron">
+                <img src="img/item-7.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="boots">
+                <img src="img/item-1.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="player">
+                <img src="img/item-9.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="photo-portfolio">
+                <img src="img/photo-portfolio.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="creative-portfolio">
+                <img src="img/item-2.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="photo-gallery">
+                <img src="img/item-3.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="welcome-to-bino">
+                <img src="img/item-4.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="explore">
+                <img src="img/item-5.jpg" alt="screenshot" />
+              </a>
+            </div>
+            <div class="item-wrap">
+              <a class="item" href="coeluso">
+                <img src="img/item-6.jpg" alt="screenshot" />
+              </a>
+            </div>
+          </div>
+        </section>
 
-        <a
-          href="mailto:chibisov153@gmail.com"
-          class="social-icon-email"
-          title="Email"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.3 483.3">
-            <path
-              d="M424.3 57.75H59.1c-32.6 0-59.1 26.5-59.1 59.1v249.6c0 32.6 26.5 59.1 59.1 59.1h365.1c32.6 0 59.1-26.5 59.1-59.1v-249.5c.1-32.6-26.4-59.2-59-59.2zm32.1 308.7c0 17.7-14.4 32.1-32.1 32.1H59.1c-17.7 0-32.1-14.4-32.1-32.1v-249.5c0-17.7 14.4-32.1 32.1-32.1h365.1c17.7 0 32.1 14.4 32.1 32.1v249.5h.1z"
-            />
-            <path
-              d="M304.8 238.55l118.2-106c5.5-5 6-13.5 1-19.1-5-5.5-13.5-6-19.1-1l-163 146.3-31.8-28.4c-.1-.1-.2-.2-.2-.3-.7-.7-1.4-1.3-2.2-1.9L78.3 112.35c-5.6-5-14.1-4.5-19.1 1.1-5 5.6-4.5 14.1 1.1 19.1l119.6 106.9-119.1 111.5c-5.4 5.1-5.7 13.6-.6 19.1 2.7 2.8 6.3 4.3 9.9 4.3 3.3 0 6.6-1.2 9.2-3.6l120.9-113.1 32.8 29.3c2.6 2.3 5.8 3.4 9 3.4s6.5-1.2 9-3.5l33.7-30.2 120.2 114.2c2.6 2.5 6 3.7 9.3 3.7 3.6 0 7.1-1.4 9.8-4.2 5.1-5.4 4.9-14-.5-19.1l-118.7-112.7z"
-            />
-          </svg>
-          <span>chibisov153@gmail.com</span>
-        </a>
+        <footer class="footer">
+          <div class="footer-wrap">
+            <div class="avatar-wrap">
+              <div class="avatar">
+                <img
+                  src="img/Dmitry-Ch.png"
+                  class="avatar-img"
+                  alt="Avatar Chibisov153"
+                />
+              </div>
+              <div class="footer-name">
+                <div class="first-wrap">
+                  <p class="first-name">Дмитрий</p>
+                </div>
+                <div class="last-wrap">
+                  <p class="last-name">Чибисов</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-contact">
+              <div class="footer-item">
+                <svg><use xlink:href="/img/sprite.svg#VK"></use></svg>
+                <a href="https://vk.com/id553874645" class="footer-social"
+                  >ВКонтакте</a
+                >
+              </div>
+              <div class="footer-item">
+                <svg><use xlink:href="/img/sprite.svg#Telegram"></use></svg>
+                <a
+                  href="tg://resolve?domain=Dmitry Chibisov"
+                  class="footer-social"
+                  >Telegram</a
+                >
+              </div>
+              <div class="footer-item">
+                <svg><use xlink:href="/img/sprite.svg#Whatsapp"></use></svg>
+                <a
+                  href="whatsapp://send?phone=+79001069755"
+                  class="footer-social"
+                  >WhatsApp</a
+                >
+              </div>
+              <div class="footer-item">
+                <svg><use xlink:href="/img/sprite.svg#Email"></use></svg>
+                <a
+                  href="mailto:chibisov153@gmail.com"
+                  class="footer-social email"
+                  >Email</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
+    </div>
 
-      <div class="header-img">
-        <img src="img/my-photo.png" alt="My photo" />
-
-        <p class="header-name">Дмитрий<br /><span>Чибисов</span></p>
-      </div>
-
-      <h1>HTML Верстальщик</h1>
-    </header>
-
-    <section>
-      <h2>Портфолио</h2>
-
-      <div class="container">
-        <a class="item" href="https://cozy-boba-970dd0.netlify.app/">
-          <img src="img/movie-actors.jpg" alt="Movie Actors" />
-        </a>
-
-        <a class="item" href="loader">
-          <img src="img/loader.jpg" alt="Loader" />
-        </a>
-
-        <a class="item" href="thomas-young">
-          <img src="img/thomas-young.jpg" alt="Thomas Young" />
-        </a>
-
-        <a class="item" href="solitaire">
-          <img src="img/solitaire.jpg" alt="Pyramid solitaire" />
-        </a>
-
-        <a class="item" href="tours">
-          <img src="img/tours.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="hexagon-logo">
-          <img src="img/hexagon-logo.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="logo-gotikcet">
-          <img src="img/gotikcet.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="sliders">
-          <img src="img/slider.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="organic-circle">
-          <img src="img/Organic-circle.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="organic">
-          <img src="img/Organic.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="ocean">
-          <img src="img/ocean.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="slanting-backgrounds">
-          <img src="img/slanting-backgrounds.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="html-form">
-          <img src="img/html-form.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="dron">
-          <img src="img/item-7.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="boots">
-          <img src="img/item-1.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="player">
-          <img src="img/item-9.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="photo-portfolio">
-          <img src="img/photo-portfolio.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="creative-portfolio">
-          <img src="img/item-2.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="photo-gallery">
-          <img src="img/item-3.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="welcome-to-bino">
-          <img src="img/item-4.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="explore">
-          <img src="img/item-5.jpg" alt="screenshot" />
-        </a>
-
-        <a class="item" href="coeluso">
-          <img src="img/item-6.jpg" alt="screenshot" />
-        </a>
-      </div>
-    </section>
-
-    <footer></footer>
-
-    <script src="js/scripts.min.js"></script>
+    <script defer src="js/main.min.js"></script>
   </body>
 </html>
